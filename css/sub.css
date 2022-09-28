@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*****************서브페이지 - 상품안내 product*****************/
+.product_container{
+  margin-bottom: 100px;
+}
+
+.container { 
+  width: 1092px; margin: auto;
+  padding: 0 20px;}
+
+  @media (max-width:1191px){
+    .container { width: 952px;}
+  }
+  @media (max-width:991px){
+    .container { width: 712px; padding: 0 6px;}
+  }
+  @media (max-width:768px){
+    .container{ width: 100%; padding: 0 20px;}
+  }
+
+.keyVisual{
+  height: 170px; 
+  background: #eeeeee;
+}
+.keyVisual .title{
+  position: absolute; top: 75px; width: 100%;
+  text-align: center;
+  }
+.keyVisual h1 { 
+  font-size: 48px; font-weight: 400; color: inherit;}  
+.keyVisual .visual {
+  display: table-cell;
+  height: 170px;
+  vertical-align: bottom;
+  }
+.keyVisual .visual img { max-width: 100%; }
+
+
+.sub_nav{ border-bottom: 1px solid #ccc; }
+.sub_nav table{ margin: auto;}
+.sub_nav table td{
+  padding: 0 20px;
+  position: relative;}
+.sub_nav table td a{
+  display: inline-block; padding: 10px;
+  font-size: 16px; color: #808080;
+}
+.sub_nav table td.active a{
+  color: #812990; border-bottom: 2px solid #812990;
+  margin-bottom: -3px; font-weight: 500;
+}
+.sub_nav table td.active a::after{
+  position: absolute; content: "";
+  left: calc(50% - 11px); bottom: -8px; 
+  /* transform: translate(-50%); */
+  width: 22px; height: 5px;
+  background: url(../img/icon_snb_arr.png);
+}
+  @media (max-width:991px){
+    .sub_nav table {width: 100%;}
+    .sub_nav table td{ padding: 0 10px; }
+  }
+  @media (max-width:768px){
+    .sub_nav {display: none;}
+  }
+
+.content_wrap { }
+.product_cont { margin-top: 40px;}
+
+.product_title {
+  position: relative;
+  margin: 70px 0 10px 0;
+}
+.product_title .title { color: #414042; line-height: 1.5;}
+.product_title .title strong{
+  display:block;
+  font-size: 35px; font-weight: 500; }
+.product_title .title span{
+  font-size: 16px; font-weight: 400; color: #6f7072;
+  margin-top: 10px;
+  }
+
+.product_title .sns_btn{
+  position: absolute; right: 0; top:0; text-align: right;
+}
+.product_title .sns_btn a{ padding-left: 3px;}
+.product_title .sns_btn a::before{
+  display: inline-block; content: "";
+  width: 1px; height: 15px;
+  background: #c5c5c5; margin-right: 3px;
+}
+.product_title .sns_btn a:first-child:before {
+  display: none;
+}
+@media (max-width:991px){
+  .product_title .title strong{font-size: 24px;}
+  .product_title .sns_btn img{ height: 22px;}
+  .product_title .share_print { display: none;}
+}
+@media (max-width:768px){
+  .product_title .title strong{font-size: 14px;}
+}
+
+
+
+.title_images { }
+.title_images img{ max-width: 100%;}
+
+.find_btn_wrap { padding-top: 50px; text-align: center;}
+.btn_purple{ 
+  background: #fff; outline: none;
+  font-size: 16px; font-weight: bold;
+  padding: 10px 15px; border: 1px solid #812990;
+  color: #812990; transition: 200ms;
+  letter-spacing: -1px;
+}
+.btn_purple:hover{ 
+  border: 1px solid #fff;
+  background: #812990; 
+  color: #fff;
+}
+
+.row {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.guarantee-container .guarantee-items {
+  margin-top: 40px;
+  margin: 40px -30px;
+  overflow: hidden;
+}
+.guarantee-container .guarantee-items .guarantee-item {
+  min-height: 280px;
+  float: left;
+  width: 510px;
+  margin: 0 30px;
+  max-width: 100%;
+  position: relative;
+}
+.guarantee-container .guarantee-items .guarantee-item .more-btn {
+  float: right;
+  margin-top: 10px;
+}
+.guarantee-container .guarantee-items .guarantee-item .more-btn a {
+  color: #801494;
+}
+.guarantee-container .guarantee-items .guarantee-item .title-line {
+  margin-top: 0;
+}
+.guarantee-container .guarantee-items .guarantee-item .guarantee-img img {
+  max-width: 100%;
+}
+.guarantee-container .guarantee-items .guarantee-item p {
+  margin-top: 10px;
+}
+@media screen and (max-width: 1169px) {
+  .guarantee-container {
+    padding: 0;
+  }
+  .guarantee-container .guarantee-items {
+    margin: 50px auto;
+  }
+  .guarantee-container .guarantee-items .guarantee-item {
+    min-height: auto;
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .guarantee-container .guarantee-items .guarantee-item .guarantee-img img {
+    width: 100%;
+  }
+}
+
+.title-line{
+  text-align: left;
+  font-size: 22px;
+  font-weight: 400;
+  color: #231f20;
+  background: url(../img/sub/icon_step_top.gif) left top no-repeat;
+  padding: 10px 0 0 0;
+  line-height: 1;
+}

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+
+/*********** main ***********/
+.main_container{
+
+}
+/*********** search ***********/
+.search_wrap{
+
+}
+.search{
+  position: relative; top: -25px;
+  width: 650px; margin: auto;
+  border: 1px solid #ebebeb;
+  border-radius: 100px;
+  padding: 12px 30px;
+  background: #fff;
+}
+.search ul{
+  display: flex;
+  justify-content: space-between;
+}
+.search li{
+  position: relative;
+}
+.search li::before{
+  position: absolute; left: -30px; top: -2px;
+  content: "";
+  width: 1px; height: 30px;
+  background: #ccc;
+}
+.search li:first-child::before{
+  display: none;
+}
+.search li a{
+
+}
+
+/*********** service ***********/
+.service_wrap{
+
+}
+.service{
+  width: 1092px; margin: auto;
+}
+.service::after{
+  display: block; content: '';
+  clear: both;
+}
+
+.service .item{
+  float: left; 
+  padding: 0 8px;
+}
+.service_item1{ width: 50%; }
+.service_right_wrap{ float: left; width: 50%;}
+  .service_item2{ width: 50%; text-align: right;} /*width: 50%;*/
+  .service_item3{ width: 50%; text-align: right;} /*width: 50%;*/
+.service_item4{ margin-top: 30px;}
+
+.service img{ max-width: 100%;}
+.service .item a{}
+
+/*********** sns ***********/
+.sns_wrap {
+  padding: 50px 0;
+  margin-top: 60px;
+  background: #eeeeee;
+}
+.sns { width: 1092px; margin: auto;}
+.sns h3 {
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.sns .item_wrap {}
+.sns .item_wrap::after {
+  display: block; content: '';
+  clear: both;
+}
+
+.sns .item { 
+  float: left;
+  width: 25%;
+  padding:0 15px;
+}
+.sns .item_a {
+  display: block;
+  margin: 10px 0;
+}
+.sns .thumb { 
+  display: block;
+  height: 0;
+  padding-bottom: 100%; /*잘 안쓰는 방식이지만 신기함 ㅋㅋ*/
+}
+.sns .thumb img {width: 100%;}
+
+
+
+
+
+
+
